@@ -2,8 +2,8 @@ FROM ubuntu:16.04
 
 RUN apt-get update
 
-RUN apt-get -y install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath && \
-socat cpio python python-pip python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping locales
+RUN apt-get -y install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat cpio
+RUN apt-get -y install python python-pip python3 python3-pip python3-pexpect xz-utils debianutils iputils-ping locales
 
 RUN locale-gen en_US.UTF-8
 
